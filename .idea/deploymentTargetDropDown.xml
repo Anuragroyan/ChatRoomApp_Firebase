@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="deploymentTargetDropDown">
+    <value>
+      <entry key="ChatRoomListScreenPreview">
+        <State />
+      </entry>
+      <entry key="ChatScreenPreview">
+        <State />
+      </entry>
+      <entry key="LoginPreview">
+        <State />
+      </entry>
+      <entry key="RoomItemPreview">
+        <State />
+      </entry>
+      <entry key="SignUpPreview">
+        <State />
+      </entry>
+      <entry key="app">
+        <State />
+      </entry>
+    </value>
+  </component>
+</project>

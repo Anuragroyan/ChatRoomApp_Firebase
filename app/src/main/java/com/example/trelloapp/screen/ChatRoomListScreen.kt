@@ -88,6 +88,7 @@ fun ChatRoomListScreen(
                            }
                        }) {
                             Text("Add")
+                           roomViewModel.createRoom(name)
                        }
                        Button(onClick = { showDialog = false }) {
                            Text("Cancel")
@@ -104,7 +105,7 @@ fun ChatRoomListScreen(
 @Preview
 @Composable
 fun ChatRoomListScreenPreview(){
-    ChatRoomListScreen(onJoinClicked = {}, roomViewModel = RoomViewModel())
+    ChatRoomListScreen(){}
 }
 
 @Composable
@@ -117,7 +118,7 @@ fun RoomItem(room: Room, onJoinClicked: (Room) -> Unit){
     ) {
         Text(text = room.name, fontSize = 16.sp, fontWeight = FontWeight.Normal)
         OutlinedButton(onClick = { onJoinClicked(room) }) {
-            Text("Anurag")
+            Text("Join")
         }
     }
 }
@@ -125,5 +126,5 @@ fun RoomItem(room: Room, onJoinClicked: (Room) -> Unit){
 @Preview
 @Composable
 fun RoomItemPreview(){
-    ChatRoomListScreen() {}
+    RoomItem(room = Room("id.com","Name")){}
 }

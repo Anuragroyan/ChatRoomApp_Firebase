@@ -97,7 +97,7 @@ fun ChatScreen(
 @Preview
 @Composable
 fun ChatScreenPreview(){
-    ChatScreen(roomId = "")
+    ChatScreen(roomId = "",MessageViewModel())
 }
 
 @RequiresApi(Build.VERSION_CODES.O)
@@ -169,4 +169,11 @@ fun ChatMessageItem(message: Message){
             )
         )
     }
+}
+
+@RequiresApi(Build.VERSION_CODES.O)
+@Preview
+@Composable
+fun ChatMessageItemPreview() {
+    ChatMessageItem(message = Message())
 }

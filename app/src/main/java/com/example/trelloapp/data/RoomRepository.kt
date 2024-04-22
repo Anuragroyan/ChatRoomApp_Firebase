@@ -1,7 +1,6 @@
 package com.example.trelloapp.data
 
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.firestore.toObject
 import kotlinx.coroutines.tasks.await
 
 class RoomRepository(
